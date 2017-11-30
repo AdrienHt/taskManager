@@ -19,7 +19,6 @@ class apiController extends api
 
     }
 
-    //To improve verification use REGEX to compare the enters
     //user/*
     //endpoint of user, redirect to the correct function to use
     protected function user($params = null, $action = null) {

@@ -27,6 +27,7 @@ class User
         $this->email = $email;
     }
 
+    // /user
     public static function getAllUsers()
     {
 
@@ -57,6 +58,7 @@ class User
         return $usersArray;
     }
 
+    // /user/id
     public static function getUserByID($id){
 
         $db = new Database();
@@ -90,13 +92,18 @@ class User
 
         $errors = [];
 
-        if (empty($data['name']) || !preg_match('/^[A-Za-z][A-Za-z0-9]{2,31}$/', $data['name']) || user::getUserByName($data['name'])) {
-            $errors['name'] = "Error: User already exist or invalid";
+        if (empty($data['name']) || !preg_match('/^[A-Za-z][A-Za-z0-9]{2,31}$/', $data['name'])) {
+            $errors['name'] = "Error: User invalid. Only letters and numbers are allowed and 2 letters minimum";
+        } else if (user::getUserByName($data['name'])) {
+            $errors['nameCheck'] = "Error: User already exist";
         }
 
-        if (empty($data['email']) || !filter_var($data['email'], FILTER_VALIDATE_EMAIL) || user::checkMailAdress($data['email'])) {
-            $errors['email'] = "Error: Mail adress already exist or is not valid";
+        if (empty($data['email']) || !filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
+            $errors['email'] = "Error: Mail is not valid";
+        } else if (user::checkMailAdress($data['email'])){
+            $errors['emailCheck'] = "Error: Mail adress already exist";
         }
+
 
         if (!empty($errors)){
             return $errors;
