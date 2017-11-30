@@ -7,7 +7,7 @@ $(document).ready(function(){
 function showUsers(){
 	
 	// get list of user from the API
-	$.getJSON("http://localhost:8888/taskmanager/api/user", function(data){
+	$.getJSON(document.origin+"/taskmanager/api/user", function(data){
 
 		get_user_html="";
 		 

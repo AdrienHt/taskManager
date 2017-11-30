@@ -67,7 +67,7 @@ $(document).ready(function(){
 	$(document).on('submit', '#create-task-form', function(){
 
 		$.ajax({
-		    url: "http://localhost:8888/taskmanager/api/task/create",
+		    url: document.origin+"/taskmanager/api/task/create",
 		    type : "POST",
 		    data : $("#create-task-form").serialize(),
 		    success : function(data) {

@@ -11,14 +11,14 @@ function getUser(id){
 	var get_one_user_tasks_html="";
 	var name = "" 
 
-	$.getJSON("http://localhost:8888/taskmanager/api/user/" + id, function(data){
+	$.getJSON(document.origin+"/taskmanager/api/user/" + id, function(data){
 
 		// change page title
 		changePageTitle("Manage " + data.name + "'s Tasks")
 		name = data.name;
 	});
 
-	$.getJSON("http://localhost:8888/taskmanager/api/task/user/" + id, function(data){
+	$.getJSON(document.origin+"/taskmanager/api/task/user/" + id, function(data){
 	
 		get_one_user_tasks_html+="<div id='get-users-button' class='btn btn-primary pull-left m-b-15px get-users-button'>";
 		get_one_user_tasks_html+="<span class='glyphicon glyphicon-list'></span> List of users";

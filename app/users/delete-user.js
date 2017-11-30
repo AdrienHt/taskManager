@@ -8,7 +8,7 @@ $(document).ready(function(){
     	if (r == true) {
 
         	$.ajax({
-        		url: "http://localhost:8888/taskmanager/api/user/delete/" + user_id,
+        		url: document.origin+"/taskmanager/api/user/delete/" + user_id,
         		type : "DELETE",
 		        success : function(result) {
 		 		    showUsers();

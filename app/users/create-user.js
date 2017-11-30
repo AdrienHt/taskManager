@@ -47,7 +47,7 @@ $(document).ready(function(){
 	$(document).on('submit', '#create-user-form', function(){
 
 		$.ajax({
-		    url: "http://localhost:8888/taskmanager/api/user/add",
+		    url: document.origin+"/taskmanager/api/user/add",
 		    type : "POST",
 		    data : $("#create-user-form").serialize(),
 		    success : function(data) {
