@@ -10,7 +10,7 @@ This app is used to manage basic tasks of a group.
 
 # API Usage
 
-You can use the Restfull api with endpoints. Some of them aren't used for the font app. 
+You can use the RESTFULL api with endpoints. Some of them aren't used for the font app. 
 
 Enpoint avalaibles :
 
