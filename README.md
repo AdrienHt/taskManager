@@ -1,13 +1,13 @@
-# taskManager
+# Task Manager
 
-#Intallation 
+# Intallation 
 1) Download the project
 2) Put it in your server or in Mamp 
 3) Go to the project url and enjoy the application (ex: http://localhost:8888/taskManager/)
   
   Note : Be sure to put the project in the right folder, to have an url like this : http://yourserver/taskManager/
 
-#Usage
+# Usage
 This app is used to manage tasks of a group. 
 
 API endpoint
