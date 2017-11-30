@@ -8,12 +8,12 @@
   Note : Be sure to put the project in the right folder, to have an url like this : http://yourserver/taskManager/
 
 #Usage
-This app is used to manage tasks of a group of people. 
+This app is used to manage tasks of a group. 
 
 API endpoint
 
-You can use only the Restfull api with endpoints. Some of them aren't used for the font app. 
-Enpoint are avalaible :
+You can use the Restfull api with endpoints. Some of them aren't used for the font app. 
+Enpoint avalaibles :
 
    -  GET :
         -   get all users: /user
