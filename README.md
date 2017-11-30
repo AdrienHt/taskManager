@@ -25,6 +25,6 @@ Enpoint avalaibles :
         -   Add a user : /user/add
         -   Create a new task : /task/create
         
-   -    Delete :
+   -    DELETE :
         -   Delete task by task ID : /task/delete/{$id}
         -   Delete a user AND all his tasks : /user/delete/{$id}
