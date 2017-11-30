@@ -1,4 +1,5 @@
 # Task Manager
+This app is used to manage basic tasks of a group.
 
 # Intallation 
 1) Download the project
@@ -7,12 +8,10 @@
   
   Note : Be sure to put the project in the right folder, to have an url like this : http://yourserver/taskManager/
 
-# Usage
-This app is used to manage tasks of a group. 
-
-API endpoint
+# API Usage
 
 You can use the Restfull api with endpoints. Some of them aren't used for the font app. 
+
 Enpoint avalaibles :
 
    -  GET :
